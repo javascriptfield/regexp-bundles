@@ -1,0 +1,12 @@
+{
+  "name": "regexp-bundle",
+  "version": "0.0.1",
+  "description": "A bundle of regexp.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javascriptfield/regexp-bundle.git"
+  },
+  "author": "TY",
+  "license": "MIT"
+}
