@@ -1,12 +1,26 @@
 {
-  "name": "regexp-bundle",
-  "version": "0.0.1",
+  "name": "regexp-bundles",
+  "version": "0.2.0",
   "description": "A bundle of regexp.",
-  "main": "index.js",
+  "main": "dist/regexp-bundles.cjs.js",
+  "module": "dist/regexp-bundles.esm.js",
+  "browser": "dist/regexp-bundles.umd.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/javascriptfield/regexp-bundle.git"
+    "url": "https://github.com/javascriptfield/regexp-bundles.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs"
   },
   "author": "TY",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.12.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
