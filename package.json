@@ -1,6 +1,6 @@
 {
   "name": "regexp-bundles",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A bundle of regexp.",
   "main": "dist/regexp-bundles.cjs.js",
   "module": "dist/regexp-bundles.esm.js",
